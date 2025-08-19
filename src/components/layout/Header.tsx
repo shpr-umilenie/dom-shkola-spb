@@ -19,15 +19,19 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <Heart className="h-8 w-8 text-primary" />
-          <div className="flex flex-col">
-            <span className="text-xl font-bold text-gradient-primary">
-              Школа приёмного родительства
-            </span>
-            <span className="text-xs text-muted-foreground">
-              Ленинградская область
-            </span>
+        <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+              <Heart className="h-6 w-6 text-white" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-lg font-bold text-gradient-primary">
+                ШПР "Умиление"
+              </span>
+              <span className="text-xs text-muted-foreground">
+                СПб и Ленинградская область
+              </span>
+            </div>
           </div>
         </div>
 
@@ -49,9 +53,11 @@ export function Header() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="w-80">
-            <div className="flex items-center space-x-2 mb-6">
-              <Heart className="h-6 w-6 text-primary" />
-              <span className="font-semibold">Школа приёмного родительства</span>
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                <Heart className="h-5 w-5 text-white" />
+              </div>
+              <span className="font-semibold">ШПР "Умиление"</span>
             </div>
             <nav className="flex flex-col space-y-2">
               {navigation.map((item) => (

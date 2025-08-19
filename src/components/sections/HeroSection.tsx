@@ -11,21 +11,21 @@ export function HeroSection() {
       <div className="container mx-auto max-w-6xl px-4 relative">
         <div className="text-center space-y-6 mb-12">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="text-gradient-primary">Школа приёмного</span>
+            <span className="text-gradient-primary">Образовательный ресурс</span>
             <br />
-            <span className="text-foreground">родительства</span>
+            <span className="text-foreground">ШПР "Умиление"</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-            Образовательная платформа для кандидатов в приёмные родители 
-            и действующих приёмных семей Ленинградской области
+            Подготовка и поддержка кандидатов в приёмные родители 
+            и действующих приёмных семей Санкт-Петербурга и Ленинградской области
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8">
-              Начать обучение
+              Изучить материалы
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8">
-              О платформе
+              О центре "Умиление"
             </Button>
           </div>
         </div>
