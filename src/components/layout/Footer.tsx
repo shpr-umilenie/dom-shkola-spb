@@ -25,19 +25,19 @@ export function Footer() {
             <div className="space-y-3 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <MessageCircle className="h-4 w-4" />
-                <a href="https://t.me/your_channel" className="hover:text-primary transition-colors">
+                <a href="https://t.me/your_channel" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                   Сообщество в Telegram
                 </a>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="h-4 w-4 text-primary font-bold">VK</span>
-                <a href="https://vk.com/centr_umilenie" className="hover:text-primary transition-colors">
+                <a href="https://vk.com/centr_umilenie" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                   Центр "Умиление" ВКонтакте
                 </a>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="h-4 w-4 text-accent font-bold">🌐</span>
-                <a href="http://shpr-umilenie.ru/" className="hover:text-primary transition-colors">
+                <a href="https://shpr-umilenie.ru/" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                   shpr-umilenie.ru
                 </a>
               </div>
@@ -48,13 +48,13 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold">Полезные ссылки</h3>
             <div className="space-y-2 text-sm">
-              <a href="https://www.gov.spb.ru/" className="block text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.gov.spb.ru/" className="block text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                 Правительство СПб
               </a>
-              <a href="https://usynovite.ru/" className="block text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://usynovite.ru/" className="block text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                 Усыновите.ру
               </a>
-              <a href="https://changeonelife.ru/" className="block text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://changeonelife.ru/" className="block text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                 Измени одну жизнь
               </a>
             </div>
