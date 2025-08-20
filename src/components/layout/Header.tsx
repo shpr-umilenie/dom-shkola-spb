@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Heart, Users, BookOpen, MessageCircle, Phone, ExternalLink } from "lucide-react";
+import { Menu, Heart, Users, BookOpen, MessageCircle, Phone, ExternalLink, Video, HelpCircle, FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Презентации", href: "/presentations", icon: BookOpen },
-  { name: "Вебинары", href: "/webinars", icon: Users },
+  { name: "Презентации", href: "/presentations", icon: FileText },
+  { name: "Вебинары", href: "/webinars", icon: Video },
   { name: "Статьи", href: "/articles", icon: BookOpen },
-  { name: "FAQ", href: "/faq", icon: MessageCircle },
+  { name: "FAQ", href: "/faq", icon: HelpCircle },
   { name: "Контакты", href: "/contacts", icon: Phone },
   { name: "Полезные ссылки", href: "/links", icon: ExternalLink },
 ];
@@ -38,10 +39,12 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-1">
           {navigation.map((item) => (
-            <Button key={item.name} variant="ghost" size="sm" className="h-9">
-              <item.icon className="h-4 w-4 mr-2" />
-              {item.name}
-            </Button>
+            <Link key={item.name} to={item.href}>
+              <Button variant="ghost" size="sm" className="h-9">
+                <item.icon className="h-4 w-4 mr-2" />
+                {item.name}
+              </Button>
+            </Link>
           ))}
         </nav>
 
@@ -61,10 +64,12 @@ export function Header() {
             </div>
             <nav className="flex flex-col space-y-2">
               {navigation.map((item) => (
-                <Button key={item.name} variant="ghost" className="justify-start h-12">
-                  <item.icon className="h-5 w-5 mr-3" />
-                  {item.name}
-                </Button>
+                <Link key={item.name} to={item.href}>
+                  <Button variant="ghost" className="justify-start h-12 w-full">
+                    <item.icon className="h-5 w-5 mr-3" />
+                    {item.name}
+                  </Button>
+                </Link>
               ))}
             </nav>
           </SheetContent>
